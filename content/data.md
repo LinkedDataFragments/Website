@@ -33,6 +33,10 @@ and even perform [federated querying](http://client.linkeddatafragments.org/#dat
   - **[Flemish company register](http://ewi.mmlab.be/ba/all)**
     _([query these fragments](http://ewi.mmlab.be/query/#startFragment=http%3A%2F%2Fewi.mmlab.be%2Fba%2Fall))_
 
+### Triple Pattern Fragments hosted by [Between Our Worlds](https://betweenourworlds.org/)
+  - **[The Between Our Worlds dataset](https://data.betweenourworlds.org)** provides Linked Open Data about anime series and movies.
+
+
 ### Triple Pattern Fragments hosted by us at [data.linkeddatafragments.org](http://data.linkeddatafragments.org/)
 
   - **[DBpedia](http://data.linkeddatafragments.org/dbpedia)**, the Linked Data version of Wikipedia
