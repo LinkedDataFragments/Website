@@ -65,7 +65,7 @@ allows us to visualize different HTTP interfaces for Linked Data _together_.
 **SPARQL endpoints** are easy for clients,
 as they allow highly specific fragment selection.
 However, they also have the highest server cost
-which makes it expensive to host them with [decent availability](http://sw.deri.org/~aidanh/docs/epmonitorISWC.pdf).
+which makes it expensive to host them with [decent availability](http://aidanhogan.com/docs/epmonitorISWC.pdf).
 If you don't want to depend on such an endpoint,
 you download a **data dump**,
 but then you're querying a local source instead of the Web.
