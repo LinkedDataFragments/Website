@@ -16,7 +16,7 @@ This way, servers only need to publish Triple Pattern Fragments of a dataset,
 providing a **scalable yet efficient** way to query Linked Data.
 
 JavaScript
-: [**Try the online demo in your browser**](http://comunica.linkeddatafragments.org/)
+: [**Try the online demo in your browser**](https://comunica.linkeddatafragments.org/)
 : [Comunica](https://github.com/comunica/comunica/) for Node.js and the browser
 : [Client.js](https://github.com/LinkedDataFragments/Client.js) for Node.js and the browser
 : [jQuery Widget](https://github.com/LinkedDataFragments/jQuery-Widget.js) for the browser

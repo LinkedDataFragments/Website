@@ -5,7 +5,7 @@
   <title><%= @item.path == '/' ? "Linked Data Fragments"
                                : "Linked Data Fragments | #{@item[:title]}" %></title>
   <link rel="stylesheet" href="/styles/main.css">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,700italic,400,700' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400italic,700italic,400,700' rel='stylesheet'>
   <meta name="viewport" content="initial-scale=1">
 </head>
 <body class="<%= @item[:title].downcase.gsub(/[^a-z]/, '') %>">
@@ -19,7 +19,7 @@
                 each do |page|
          %><li<%= @item == page ? ' class="active"' : '' %>><%= link_to(page[:title], page) %></li><%
       end %>
-        <li class="new"><a href="http://comunica.linkeddatafragments.org/">Comunica</a></li>
+        <li class="new"><a href="https://comunica.linkeddatafragments.org/">Comunica</a></li>
     </ul>
   </nav>
   <main>

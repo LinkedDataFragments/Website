@@ -16,7 +16,7 @@ moving intelligence from servers to clients.](/concept/)
 [Watch this talk](http://videolectures.net/iswc2014_verborgh_querying_datasets/ "Ruben Verborgh at ISWC2014: Querying Datasets on the Web with High Availability")
 to learn the foundations of Linked Data Fragments.
 
-Try [Comunica](http://comunica.linkeddatafragments.org/), a new Web framework to query Linked Data Fragments.
+Try [Comunica](https://comunica.linkeddatafragments.org/), a new Web framework to query Linked Data Fragments.
 </div>
 
 **A huge amount of Linked Data is available on the Web.**
@@ -78,4 +78,4 @@ Or view some of the 650,000+ datasets out there:
 [browse datasets online](/data/).
 <br>
 See how clients solve SPARQL queries on your data:
-[try a Linked Data Fragments client](http://comunica.linkeddatafragments.org/).
+[try a Linked Data Fragments client](https://comunica.linkeddatafragments.org/).
