@@ -1,5 +1,5 @@
 # Linked Data Fragments website
-This repository contains the source code for [linkeddatafragments.org](http://linkeddatafragments.org).
+This repository contains the source code for [linkeddatafragments.org](https://linkeddatafragments.org).
 
 ## Adding publications
 The publications list is automatically generated from BibTeX. You can add your work on Linked Data Fragments by:
@@ -9,7 +9,7 @@ The publications list is automatically generated from BibTeX. You can add your w
 Please follow the formatting of the other BibTeX entries.
 
 ## Compiling the site locally
-This site uses the [Nanoc static site compiler](http://nanoc.ws/).
+This site uses the [Nanoc static site compiler](https://nanoc.ws/).
 
 ### Preparations
 - Install Ruby >= 2.2.5 and the bundler gem

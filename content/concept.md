@@ -7,11 +7,11 @@ order: 3
 Today's Web offers three common ways to access Linked Data:
 
 - A **data dump** contains all triples in an entire dataset
-  _([example](http://downloads.dbpedia.org/3.9/en/))_.
+  _([example](https://downloads.dbpedia.org/3.9/en/))_.
 - A **subject page** contains triples about a specific subject in a dataset
-  _([example](http://dbpedia.org/page/Linked_data))_.
-- A **SPARQL result** contains triples that correspond to a [SPARQL CONSTRUCT](http://www.w3.org/TR/sparql11-query/#construct) query
-  _([example](http://dbpedia.org/sparql?query=PREFIX+dbpedia-owl%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ACONSTRUCT+%7B+%3Fp+a+dbpedia-owl%3AArtist+%7D%0D%0AWHERE+%7B+%3Fp+a+dbpedia-owl%3AArtist+%7D&format=text%2Fturtle))_.
+  _([example](https://dbpedia.org/page/Linked_data))_.
+- A **SPARQL result** contains triples that correspond to a [SPARQL CONSTRUCT](https://www.w3.org/TR/sparql11-query/#construct) query
+  _([example](https://dbpedia.org/sparql?query=PREFIX+dbpedia-owl%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ACONSTRUCT+%7B+%3Fp+a+dbpedia-owl%3AArtist+%7D%0D%0AWHERE+%7B+%3Fp+a+dbpedia-owl%3AArtist+%7D&format=text%2Fturtle))_.
 
 Linked Data Fragments is a conceptual framework that provides a uniform view on all possible interfaces to RDF,
 by observing that each interface partitions a dataset into its own specific kind of _fragments_.
@@ -65,12 +65,12 @@ allows us to visualize different HTTP interfaces for Linked Data _together_.
 **SPARQL endpoints** are easy for clients,
 as they allow highly specific fragment selection.
 However, they also have the highest server cost
-which makes it expensive to host them with [decent availability](http://sw.deri.org/~aidanh/docs/epmonitorISWC.pdf).
+which makes it expensive to host them with [decent availability](http://aidanhogan.com/docs/epmonitorISWC.pdf).
 If you don't want to depend on such an endpoint,
 you download a **data dump**,
 but then you're querying a local source instead of the Web.
 With **subject pages**, servers do minimal effort,
-but clients need to [work hard](http://squin.sourceforge.net/) to solve simple queries.
+but clients need to [work hard](https://squin.sourceforge.net/) to solve simple queries.
 
 Can we **minimize server resource usage**
 while still enabling clients to **query data sources efficiently**?
@@ -86,11 +86,11 @@ One such type is called a **Triple Pattern Fragment**
 It consists of:
 
 - **data** that corresponds to a triple pattern
-  _([example](http://data.linkeddatafragments.org/dbpedia?subject=&predicate=rdf%3Atype&object=dbpedia-owl%3ARestaurant))_.
+  _([example](https://data.linkeddatafragments.org/dbpedia?subject=&predicate=rdf%3Atype&object=dbpedia-owl%3ARestaurant))_.
 - **metadata** that consists of the (approximate) total triple count
-  _([example](http://data.linkeddatafragments.org/dbpedia?subject=&predicate=rdf%3Atype&object=))_.
+  _([example](https://data.linkeddatafragments.org/dbpedia?subject=&predicate=rdf%3Atype&object=))_.
 - **controls** that lead to all other fragments of the same dataset
-  _([example](http://data.linkeddatafragments.org/dbpedia?subject=&predicate=&object=%22John%22%40en))_.
+  _([example](https://data.linkeddatafragments.org/dbpedia?subject=&predicate=&object=%22John%22%40en))_.
 
 Servers that offer such fragments are called
 [**_Triple Pattern Fragments_ servers**](/software/#server).
