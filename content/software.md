@@ -18,8 +18,8 @@ providing a **scalable yet efficient** way to query Linked Data.
 JavaScript
 : [**Try the online demo in your browser**](http://comunica.linkeddatafragments.org/)
 : [Comunica](https://github.com/comunica/comunica/) for Node.js and the browser
-: [Client.js](https://github.com/LinkedDataFragments/Client.js) for Node.js and the browser
-: [jQuery Widget](https://github.com/LinkedDataFragments/jQuery-Widget.js) for the browser
+: [jQuery Widget](https://github.com/comunica/jQuery-Widget.js) for the browser
+: [Client.js](https://github.com/LinkedDataFragments/Client.js) for Node.js and the browser (*deprecated in favor of Comunica*)
 : [&lt;ldf-client&gt;](https://github.com/tomayac/ldf-client) Polymer client
 
 Perl
