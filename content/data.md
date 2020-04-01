@@ -35,7 +35,10 @@ and even perform [federated querying](http://client.linkeddatafragments.org/#dat
 
 ### Triple Pattern Fragments hosted by [Between Our Worlds](https://betweenourworlds.org/)
   - **[The Between Our Worlds dataset](https://data.betweenourworlds.org)** provides Linked Open Data about anime series and movies.
-
+  
+### Triple Pattern Fragments hosted by the [SEPSES project](https://sepses.ifs.tuwien.ac.at/)
+   - **[The SEPSES cybersecurity knowledge base](http://ldf-server.sepses.ifs.tuwien.ac.at/)**
+     provides continuously published cybersecurity information.
 
 ### Triple Pattern Fragments hosted by us at [data.linkeddatafragments.org](http://data.linkeddatafragments.org/)
 
