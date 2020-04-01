@@ -39,6 +39,7 @@ and even perform [federated querying](http://client.linkeddatafragments.org/#dat
 ### Triple Pattern Fragments hosted by the [SEPSES project](https://sepses.ifs.tuwien.ac.at/)
    - **[The SEPSES cybersecurity knowledge base](http://ldf-server.sepses.ifs.tuwien.ac.at/)**
      provides continuously published cybersecurity information.
+     _([query these fragments](https://ldf-client.sepses.ifs.tuwien.ac.at/))_    
 
 ### Triple Pattern Fragments hosted by us at [data.linkeddatafragments.org](http://data.linkeddatafragments.org/)
 
