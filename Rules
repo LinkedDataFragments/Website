@@ -27,14 +27,15 @@ route '/index.*' do
 end
 
 # All other files
+compile '/**/*.md' do
+  filter :erb
+  filter :kramdown
+  layout '/default.*'
+  filter :externalize_links
+  filter :html5small if compress
+end
 compile '/**/*' do
-  unless item.binary?
-    filter :erb
-    filter :kramdown
-    layout '/default.*'
-    filter :externalize_links
-    filter :html5small if compress
-  end
+  write item.identifier.to_s
 end
 route '/**/*' do
   if item.binary?
