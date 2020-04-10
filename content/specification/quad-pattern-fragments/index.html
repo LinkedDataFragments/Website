@@ -32,7 +32,7 @@ try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag
           company: "Ghent University – imec",
           companyURL: "https://www.ugent.be/ea/idlab/en",
         }],
-        edDraftURI: "http://www.hydra-cg.com/spec/latest/quad-pattern-fragments/",
+        edDraftURI: "https://linkeddatafragments.org/specification/quad-pattern-fragments/",
         maxTocLevel: 2,
         localBiblio: localBibliography,
     };
@@ -91,9 +91,9 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
     <section>
       <h3>Extension to Triple Pattern Fragments</h3>
 	 	 <p>
-      	The <a href="http://www.hydra-cg.com/spec/latest/triple-pattern-fragments/">Triple Pattern Fragments</a> interface allows for triple retrieval based on triple patterns.
+      	The <a href="https://linkeddatafragments.org/specification/triple-pattern-fragments/">Triple Pattern Fragments</a> interface allows for triple retrieval based on triple patterns.
 		A Triple Pattern Fragment contains those triples of a dataset that match a specific triple pattern, together with a set of metadata.
-		Quad Pattern Fragments is an extension to this by not only allowing triple patterns to be used as <a href="http://www.hydra-cg.com/spec/latest/linked-data-fragments/">Linked Data Fragments</a> selector, but also quad patterns by which a collection of matching quads can be retrieved from the dataset.
+		Quad Pattern Fragments is an extension to this by not only allowing triple patterns to be used as <a href="https://linkeddatafragments.org/specification/linked-data-fragments/">Linked Data Fragments</a> selector, but also quad patterns by which a collection of matching quads can be retrieved from the dataset.
 		</p>
 		<p>	
 		By allowing quad patterns to be used as selector, quads become the replacement of triples as a unit of information.
@@ -113,7 +113,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
         while enabling efficient live querying over datasets that contain named graphs on the client side.
       <p>
         This document defines <em>Quad Pattern Fragments</em>,
-        a <a href="http://www.hydra-cg.com/spec/latest/linked-data-fragments/">Linked Data Fragments</a> type,
+        a <a href="https://linkeddatafragments.org/specification/linked-data-fragments/">Linked Data Fragments</a> type,
         by specifying their representation and effect on the application state.
         This allows to publish and consume Linked Data
         through a Quad Pattern Fragments interface.
@@ -162,7 +162,7 @@ PREFIX sd:    &lt;http://www.w3.org/ns/sparql-service-description#&gt;
         </li>
       </ul>
 	  <p>
-		  <a href="http://www.hydra-cg.com/spec/latest/triple-pattern-fragments/">Triple Pattern Fragments</a> formulates the following answer to this:
+		  <a href="https://linkeddatafragments.org/specification/triple-pattern-fragments/">Triple Pattern Fragments</a> formulates the following answer to this:
       <ul>
         <li>Clients can ask for a <em>triple pattern</em>.</li>
         <li>To each <em>triple pattern</em> request,
@@ -183,7 +183,7 @@ PREFIX sd:    &lt;http://www.w3.org/ns/sparql-service-description#&gt;
 	  </p>
 	  <p>
 	  	A quad pattern request returns a Quad Pattern Fragment containing all quads that are present in the interface's dataset matching the pattern, together with metadata and hypermedia controls.
-		Just as with <a href="http://www.hydra-cg.com/spec/latest/triple-pattern-fragments/">Triple Pattern Fragments</a>, Quad Pattern Fragments are precisely defined using the <a href="#bib-HYDRA-LDF">Linked Data Fragments</a> conceptual framework in the remainder of this section.
+		Just as with <a href="https://linkeddatafragments.org/specification/triple-pattern-fragments/">Triple Pattern Fragments</a>, Quad Pattern Fragments are precisely defined using the <a href="#bib-HYDRA-LDF">Linked Data Fragments</a> conceptual framework in the remainder of this section.
 	  </p>
       <p>
 		Quad Pattern Fragments are protocol-independent.
@@ -268,10 +268,10 @@ PREFIX sd:    &lt;http://www.w3.org/ns/sparql-service-description#&gt;
 		  When the above constraints are taken into account, every Quad Pattern Fragment can be interpreted as a Triple Pattern Fragment for backwards-compatibility with TPF-clients and each Triple Pattern Fragment can still be interpreted as a Quad Pattern Fragment for backwards-compatibility with TPF-servers.
 	  </p>
       <p>
-		  A <dfn>Quad Pattern Fragments server</dfn> is a <a href="http://www.hydra-cg.com/spec/latest/triple-pattern-fragments/#server">Triple Pattern Fragments server</a> that provides access to Quad Pattern Fragments, a generalization of Triple Pattern Fragments.
+		  A <dfn>Quad Pattern Fragments server</dfn> is a <a href="https://linkeddatafragments.org/specification/triple-pattern-fragments/#server">Triple Pattern Fragments server</a> that provides access to Quad Pattern Fragments, a generalization of Triple Pattern Fragments.
       </p>
       <p>
-		  The dataset that is made available through a Quad Pattern Fragments server MUST follow the document type as defined in <a href="#document-type"></a> next to the dataset requirements defined by <a href="http://www.hydra-cg.com/spec/latest/triple-pattern-fragments/#server">Triple Pattern Fragments</a>.
+		  The dataset that is made available through a Quad Pattern Fragments server MUST follow the document type as defined in <a href="#document-type"></a> next to the dataset requirements defined by <a href="https://linkeddatafragments.org/specification/triple-pattern-fragments/#server">Triple Pattern Fragments</a>.
       </p>
     </section>
 
@@ -363,7 +363,7 @@ PREFIX sd:    &lt;http://www.w3.org/ns/sparql-service-description#&gt;
         This control MUST be expressed as a form in the
         <a href="http://www.hydra-cg.com/spec/latest/core/">Hydra Core Vocabulary</a> [[!HYDRA-CORE]]
         using triples in the controls graph.
-		This structure MUST either be as the <a href="http://www.hydra-cg.com/spec/latest/triple-pattern-fragments/">Triple Pattern Fragments</a> control form or as the following:
+		This structure MUST either be as the <a href="https://linkeddatafragments.org/specification/triple-pattern-fragments/">Triple Pattern Fragments</a> control form or as the following:
       </p>
 <pre><code>&lt;http://example.org/example#controls&gt;
       {
@@ -396,7 +396,7 @@ PREFIX sd:    &lt;http://www.w3.org/ns/sparql-service-description#&gt;
       </p>
       <p>
 		  These hypermedia controls generally accept strings as input.
-		  The conversion of IRIs, literals, and variables to strings is specified by <a href="http://www.hydra-cg.com/spec/latest/triple-pattern-fragments/#controls">Triple Pattern Fragments</a>.
+		  The conversion of IRIs, literals, and variables to strings is specified by <a href="https://linkeddatafragments.org/specification/triple-pattern-fragments/#controls">Triple Pattern Fragments</a>.
       </p>
 
       <p>
@@ -434,7 +434,7 @@ PREFIX sd:    &lt;http://www.w3.org/ns/sparql-service-description#&gt;
       <p>
         Quad Pattern Fragments SHOULD be paged to avoid overly large responses.
         A <dfn title="Quad Pattern Fragment page">page</dfn> of a Quad Pattern Fragment
-        has the same characteristics as a <a href="http://www.hydra-cg.com/spec/latest/triple-pattern-fragments/#paging">Triple Pattern Fragment page</a>.
+        has the same characteristics as a <a href="https://linkeddatafragments.org/specification/triple-pattern-fragments/#paging">Triple Pattern Fragment page</a>.
       </p>
     </section>
   </section>
