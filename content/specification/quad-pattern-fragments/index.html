@@ -279,7 +279,7 @@ PREFIX sd:    &lt;http://www.w3.org/ns/sparql-service-description#&gt;
       <h3>Data</h3>
       <p>
 		A Quad Pattern Fragment contains all quads of a dataset that matches the fragment's quad pattern selector.
-		These quads SHOULD be consistently ordened such that Quad Pattern Fragments can be paged consistently.
+		These quads SHOULD be consistently ordered such that Quad Pattern Fragments can be paged consistently.
 		Quads SHOULD NOT contain blank nodes, instead these blank nodes SHOULD be <a href="http://www.w3.org/TR/rdf11-concepts/#section-skolemization">skolemized</a>.
       </p>
       <p>
@@ -366,19 +366,19 @@ PREFIX sd:    &lt;http://www.w3.org/ns/sparql-service-description#&gt;
 		This structure MUST either be as the <a href="https://linkeddatafragments.org/specification/triple-pattern-fragments/">Triple Pattern Fragments</a> control form or as the following:
       </p>
 <pre><code>&lt;http://example.org/example#controls&gt;
-      {
+    {
         &lt;http://example.org/example#dataset&gt;
-        void:subset &lt;http://example.org/example?s=http%3A%2F%2Fexample.org%2Ftopic&gt;;
+            void:subset &lt;http://example.org/example?s=http%3A%2F%2Fexample.org%2Ftopic&gt;;
+            hydra:search [
+                hydra:template "http://example.org/example{?s,p,o,g}";
+                hydra:mapping  [ hydra:variable "s"; hydra:property rdf:subject ],
+                               [ hydra:variable "p"; hydra:property rdf:predicate ],
+                               [ hydra:variable "o"; hydra:property rdf:object ],
+                               [ hydra:variable "g"; hydra:property sd:graph ]
+            ].
         &lt;http://example.org/example#controls&gt;
-        foaf:primaryTopic &lt;http://example.org/example#dataset&gt;;
-        hydra:search [
-            hydra:template "http://example.org/example{?s,p,o,g}";
-            hydra:mapping  [ hydra:variable "s"; hydra:property rdf:subject ],
-                           [ hydra:variable "p"; hydra:property rdf:predicate ],
-                           [ hydra:variable "o"; hydra:property rdf:object ],
-                           [ hydra:variable "g"; hydra:property sd:graph ]
-        ].
-      }</code></pre>
+            foaf:primaryTopic &lt;http://example.org/example?s=http%3A%2F%2Fexample.org%2Ftopic&gt;.
+    }</code></pre>
       <p>
         The above snippet assumes the dataset IRI is
         <code>http://example.org/example#dataset</code>,
