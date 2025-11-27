@@ -3,7 +3,7 @@ run-name: Building website and pushing to gh-pages branch
 on: [push]
 
 jobs:
-  Generate-RDF-Build-Miravi:
+  Deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
@@ -20,7 +20,9 @@ jobs:
           ref: gh-pages
           path: gh-pages
       - name: Move output to gh-pages
-        run: mv output/* gh-pages/
+        run: |
+          rm -rf gh-pages/*
+          mv output/* gh-pages/
       - uses: EndBug/add-and-commit@v9
         with:
           cwd: gh-pages
