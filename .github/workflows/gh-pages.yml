@@ -1,0 +1,28 @@
+name: Build website and deploy
+run-name: Building website and pushing to gh-pages branch
+on: [push]
+
+jobs:
+  Generate-RDF-Build-Miravi:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v5
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.4.4'
+          bundler-cache: true
+      - name: Build website
+        run: bundle exec nanoc compile
+      - name: Clone gh-pages branch of this repo
+        uses: actions/checkout@v5
+        with:
+          ref: gh-pages
+          path: gh-pages
+      - name: Move output to gh-pages
+        run: mv output/* gh-pages/
+      - uses: EndBug/add-and-commit@v9
+        with:
+          cwd: gh-pages
+          add: "*"
+          message: "Update website from branch ${{ github.ref.name }}"
