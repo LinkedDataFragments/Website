@@ -18,10 +18,6 @@ and even perform [federated querying](http://client.linkeddatafragments.org/#dat
   - **[Wikidata](https://query.wikidata.org/bigdata/ldf)**, the free knowledge base
     _([query these fragments](http://ldfclient.wmflabs.org/))_
 
-### Triple Pattern Fragments hosted by [LOD Laundromat](http://lodlaundromat.org/wardrobe/)
-  - **[Dataset index](http://lodlaundromat.org/wardrobe/)**,
-    more than 650,000 datasets from across the Web.
-
 ### Triple Pattern Fragments hosted for [DataSalon](http://www.datasalon.com/)
   - **[OrgRef](http://ldf-vivo.herokuapp.com/orgref)**,
     data about organizations (universities, colleges, schools, hospitals)
